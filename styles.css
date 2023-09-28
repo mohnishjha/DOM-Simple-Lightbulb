@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: rgba(178, 234, 95, 0.4);
+}
+/* h1{
+    font-size: 70px;
+} */
+.bulb{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.bulb-top{
+    background-color: yellow;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    cursor: pointer;
+    /* box-shadow: 10px 10px inset; */
+    border: 0.25px solid
+
+}
+.bulb-bottom{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    position: absolute;
+    bottom: 127px;
+    border-radius: 15px;
+    z-index: 0;
+    /* box-shadow: 10px 10px inset; */
+}
+hr{
+    margin: 25px 0;
+    width: 99px;
+    height: 4px;
+    /* color: white; */
+    background-color: black;
+    border: black;
+    
+}
+
+.switch{
+    position: absolute;
+    top: 100px;
+}
+button{
+    width: 100px;
+    height: 50px;
+    font-size: larger;
+    background-color: chocolate;
+    color: aqua;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .bulb-bottom {
+      bottom: 90px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .bulb-top{
+        width: 150px;
+        height: 150px;
+    }
+    .switch{
+        top: 30px
+    }
+    .button{
+        width: 50px;
+        height: 25px;
+        background-color: black;
+    }
+    hr{
+        width: 49px;
+        height: 1px;
+        margin: 10px 0;
+    }
+  }
